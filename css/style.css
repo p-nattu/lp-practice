@@ -1,1 +1,234 @@
 @charset "utf-8";
+
+body {
+    width: 100%;
+}
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+.header_left {
+    color: #777;
+    float: left;
+    margin-left: 20px;
+}
+
+.header_right {
+    background-color: #6ba7eb;
+    float: right;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    margin-right: 20px;
+}
+
+.header_right a {
+    transition: all 0.3s;
+    /*0.3秒かけてアニメーションを行う*/
+}
+
+.fa {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.header_right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.keyvisual {
+    text-align: center;
+    padding: 400px 0;
+    background-image: url("../images/keyvisual/keyvisual.jpg");
+    background-size: cover;
+}
+
+.keyvisual h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #6ba7eb;
+    padding-bottom: 30px;
+}
+
+.keyvisual h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.news {
+    background-color: #e3f2fd;
+    padding-top: 50px;
+}
+
+.news_logo {
+    width: 40%;
+}
+
+.news_logo img {
+    margin-left: 100px;
+    float: left;
+}
+
+.news_block {
+    width: 60%;
+    float: right;
+}
+
+.news_block h3 {
+    padding: 20px 0 35px 0;
+}
+
+.h3_title {
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.p {
+    font-size: 15px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.skills {
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.skills_block ul {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    opacity: 0.7;
+}
+
+.skills_block ul li {
+    margin: 50px;
+}
+
+.skills_block ul li:nth-child(1),
+.skills_block ul li:nth-child(4) {
+    margin-left: 0;
+}
+
+.skills_block ul li:nth-child(3),
+.skills_block ul li:nth-child(6) {
+    margin-right: 0;
+}
+
+.plan {
+    background-color: #d0dfea;
+    padding: 50px 0;
+}
+
+.plan .inner h3 {
+    padding-bottom: 50px;
+}
+
+.plan_table {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+thead {
+    background-color: #6ba7eb;
+    font-size: 16px;
+}
+
+th,
+td {
+    padding: 10px;
+    line-height: 26px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 25%;
+}
+
+th {
+    font-weight: bold;
+}
+
+th:first-child {
+    border-left: none;
+}
+
+thead th {
+    border-bottom: none;
+}
+
+tbody tr {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #e0efff;
+}
+
+.sns {
+    background-color: #e3f2fd;
+    padding: 200px 0;
+    overflow: hidden;
+    font-size: 40px;
+    text-align: center;
+}
+
+.fa-facebook-f,
+.fa-comment-dots,
+.fa-twitter,
+.fa-envelope {
+    color: #8c8c8c;
+    letter-spacing: 100px;
+    transition: all 0.5s;
+    /* 0.5秒かけてアニメーションを行う */
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #cfd8dc;
+}
+
+footer .inner p {
+    padding: 25px 0;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    float: right;
+}
+
+/* ここから下はactionになります */
+
+.header_right a:hover {
+    color: #333;
+}
+
+.img:hover {
+    opacity: 1;
+}
+
+.fa-facebook-f:hover,
+.fa-comment-dots:hover,
+.fa-twitter:hover,
+.fa-envelope:hover {
+    color: #fff;
+}
