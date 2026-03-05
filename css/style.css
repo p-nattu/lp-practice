@@ -232,3 +232,66 @@ footer .inner p {
 .fa-envelope:hover {
     color: #fff;
 }
+
+/* 第４章addアニメーション */
+
+/* SELECT PLANアニメーション */
+.plan_table {
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+.plan_table tbody tr {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.plan_table.is-inview {
+    transform: scale(1.3);
+}
+
+.plan_table.is-inview tbody tr {
+    animation: rowFade 0.5s forwards;
+}
+
+@keyframes rowFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* WE ARE Skill 紙アニメーション */
+
+.skills_block ul li {
+    perspective: 900px;
+}
+
+.skills_block ul li .li_a {
+    display: inline-block;
+}
+
+.skills_block ul li .img {
+    transform-origin: left center;
+    filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .14));
+    will-change: transform, filter;
+}
+
+/* Kye visual 波アニメーション */
+.keyvisual {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-area {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+}
+
+.waves {
+    width: 100%;
+    height: 100%;
+}

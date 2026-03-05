@@ -52,6 +52,7 @@
     .skills_block ul li:last-child {
         margin-bottom: 50px;
     }
+
 }
 
 @media (max-width:767px) {
@@ -93,7 +94,7 @@
     }
 
     .sns {
-        margin 50px 0;
+        margin: 50px 0;
     }
 
     .sns .inner ul {
